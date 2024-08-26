@@ -1,0 +1,136 @@
+:root{
+    --bg-color: #201E43;
+    --container-bg-color: #134B70;
+    --text-color: #508C9B;
+    --item-bg-color: #EEEEEE;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;     /*view width*/
+    height: 100%;    /*view height*/
+    margin: 0;
+    padding: 0%;
+    
+}
+
+
+.nav {
+    --padding-container: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+}
+
+.nav__title {
+    font-weight: 300;
+    padding: 30px;
+    
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+
+}
+
+.nav__items {
+    list-style: none;
+
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+
+.nav__close {
+    display: var(--show, none);
+}
+
+
+
+
+
+
+.container{
+    background-color: var(--container-bg-color);
+
+    @media (max-width: 1250px) {
+        h1,h2,h3{
+            color:var(--bg-color);
+            font-size: 35px;
+        }
+        
+        p, li{
+            font-size: 30px;
+        }
+        header{
+            margin: 20px;
+        }
+    }
+    justify-content: center;
+
+    
+}
+
+.container{
+    justify-items: center;
+    justify-content: center;
+
+}
+
+.item{
+    background-color: var(--item-bg-color);
+    position: ab;
+    padding: 30px;
+    text-align:justify;
+    image-orientation: flip;
+    justify-content: center;
+
+
+
+}
+
+.form{
+    background-color: var(--container-bg-color);
+    width: 50%;
+    margin: 50px;
+    padding: 100px;
+    border-radius: 15px;
+    display:inline-block;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* #relative{
+    position: relative;
+    /* top: 35px; */
+
+    /* .absolute-container{
+    position: relative;
+} */
+
+/* #absolute{
+    position: absolute;
+    top:300px;
+} */
